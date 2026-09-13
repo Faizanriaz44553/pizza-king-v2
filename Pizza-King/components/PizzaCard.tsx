@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
-import type { pizzas } from "@/lib/data";
 import { Pizza } from "@/lib/pizzas";
 
 export default function PizzaCard({ pizza }: { pizza: Pizza }) {
