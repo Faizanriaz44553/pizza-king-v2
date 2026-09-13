@@ -53,8 +53,17 @@ export type Order = {
 };
 
 export async function createOrder(order: NewOrder): Promise<string> {
+  const { address, city, items, name, payment, phone, total, userEmail } = order;
+  
   const docRef = await addDoc(collection(db, "orders"), {
-    ...order,
+    address: address,
+    city: city,
+    items: items, 
+    name: name,
+    payment: payment,
+    phone: phone,
+    total: total,
+    userEmail:userEmail ?? null,
     status: "pending",
     createdAt: serverTimestamp(),
   });

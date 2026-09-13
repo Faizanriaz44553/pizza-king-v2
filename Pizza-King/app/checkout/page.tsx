@@ -42,7 +42,8 @@ export default function CheckoutPage() {
     return Object.keys(newErrors).length === 0;
   };
 
-const handlePlaceOrder = async () => {
+  const handlePlaceOrder = async () => {
+  
   if (!validate()) return;
   setSubmitting(true);
 
