@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #2A2117;
+  --color-cream: #FBF6EC;
+  --color-ivory: #FFFCF5;
+  --color-tomato: #B8391F;
+  --color-tomatoDark: #8F2C17;
+  --color-cheese: #E0A339;
+  --color-basil: #4C7A51;
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+body {
+  background: linear-gradient(180deg, #FBF6EC 0%, #F5EAD3 40%, #EFE0C4 100%);
+  color: var(--color-charcoal);
+  min-height: 100vh;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #2A2117 0%, #3A2A1C 45%, #6B3420 100%);
+}
+
+.warm-gradient-text {
+  background: linear-gradient(90deg, #E0A339 0%, #B8391F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
